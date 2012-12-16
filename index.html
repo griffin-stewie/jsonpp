@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jsonpp by griffin-stewie</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jsonpp</h1>
+        <p>jsonpp - pretty-print json</p>
+        <p class="view"><a href="https://github.com/griffin-stewie/jsonpp">View the Project on GitHub <small>griffin-stewie/jsonpp</small></a></p>
+        <ul>
+          <li><a href="https://github.com/griffin-stewie/jsonpp/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/griffin-stewie/jsonpp/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/griffin-stewie/jsonpp">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>NAME</h1>
+
+<p>jsonpp - pretty-print json</p>
+
+<h1>SYNOPSIS</h1>
+
+<p>jsonpp [*options*] [*input*]</p>
+
+<h1>DESCRIPTION</h1>
+
+<p>pass json as argument</p>
+
+<pre><code>`jsonpp ~/Documents/foo/sample.json`
+</code></pre>
+
+<p>pass URL as argument. use curl -k if URL starts with "https".</p>
+
+<pre><code>`jsonpp --sort-numeric http://localhost:4567/sample.json`
+</code></pre>
+
+<p>pass json as STDIN</p>
+
+<pre><code>`curl http://localhost:4567/sample.json | jsonpp --sort`
+</code></pre>
+
+<p>open pretty-printed JSON by "Sublime Text 2.app"</p>
+
+<pre><code>`jsonpp ~/foo/sample.json | open -f -a "Sublime Text 2.app"`
+</code></pre>
+
+<p>write output to FILE instead of stdout.</p>
+
+<pre><code>`jsonpp -o ~/foo/bar/buzz.json ~/foo/bar/buzz.json`
+
+`jsonpp --output twitter_search.json "http://search.twitter.com/search.json?lang=ja&amp;rpp=20&amp;q=%23iPhone"`
+</code></pre>
+
+<h1>OPTIONS</h1>
+
+<p>-v, --version<br>
+   Print version.</p>
+
+<p>-h, --help<br>
+   Print help.</p>
+
+<p>--sort<br>
+   Sort keys (use compare)</p>
+
+<p>--sort-numeric<br>
+   Sort keys (NSNumericSearch)</p>
+
+<p>-o <em>FILE</em>, --output <em>FILE</em><br>
+   Write output to <em>FILE</em> instead of <em>stdout</em>.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/griffin-stewie">griffin-stewie</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>

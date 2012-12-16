@@ -1,0 +1,79 @@
+.TH JSONPP 1 "December 12, 2012" "jsonpp User Manuals"
+.SH NAME
+.PP
+jsonpp - pretty-print json
+.SH SYNOPSIS
+.PP
+jsonpp [\f[I]options\f[]] [\f[I]input\f[]]
+.SH DESCRIPTION
+.PP
+pass json as argument
+.IP
+.nf
+\f[C]
+`jsonpp\ ~/Documents/foo/sample.json`
+\f[]
+.fi
+.PP
+pass URL as argument.
+use curl -k if URL starts with "https".
+.IP
+.nf
+\f[C]
+`jsonpp\ --sort-numeric\ http://localhost:4567/sample.json`
+\f[]
+.fi
+.PP
+pass json as STDIN
+.IP
+.nf
+\f[C]
+`curl\ http://localhost:4567/sample.json\ |\ jsonpp\ --sort`
+\f[]
+.fi
+.PP
+open pretty-printed JSON by "Sublime Text 2.app"
+.IP
+.nf
+\f[C]
+`jsonpp\ ~/foo/sample.json\ |\ open\ -f\ -a\ "Sublime\ Text\ 2.app"`
+\f[]
+.fi
+.PP
+write output to FILE instead of stdout.
+.IP
+.nf
+\f[C]
+`jsonpp\ -o\ ~/foo/bar/buzz.json\ ~/foo/bar/buzz.json`
+
+`jsonpp\ --output\ twitter_search.json\ "http://search.twitter.com/search.json?lang=ja&rpp=20&q=%23iPhone"`
+\f[]
+.fi
+.SH OPTIONS
+.TP
+.B -v, --version
+Print version.
+.RS
+.RE
+.TP
+.B -h, --help
+Print help.
+.RS
+.RE
+.TP
+.B --sort,
+Sort keys (use compare)
+.RS
+.RE
+.TP
+.B --sort-numeric
+Sort keys (NSNumericSearch)
+.RS
+.RE
+.TP
+.B -o \f[I]FILE\f[], --output \f[I]FILE\f[]
+Write output to \f[I]FILE\f[] instead of \f[I]stdout\f[].
+.RS
+.RE
+.SH AUTHORS
+griffin_stewie.

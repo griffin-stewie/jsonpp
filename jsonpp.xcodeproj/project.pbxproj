@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E34DAD4716739D2700F07ED3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34DAD4616739D2700F07ED3 /* Foundation.framework */; };
 		E34DAD4A16739D2700F07ED3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E34DAD4916739D2700F07ED3 /* main.m */; };
-		E34DAD4E16739D2700F07ED3 /* jsonpp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E34DAD4D16739D2700F07ED3 /* jsonpp.1 */; };
 		E34DAD7A16739ED400F07ED3 /* DDCliApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = E34DAD5716739ED400F07ED3 /* DDCliApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E34DAD7B16739ED400F07ED3 /* DDCliParseException.m in Sources */ = {isa = PBXBuildFile; fileRef = E34DAD5916739ED400F07ED3 /* DDCliParseException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E34DAD7C16739ED400F07ED3 /* DDCliUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E34DAD5B16739ED400F07ED3 /* DDCliUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -37,7 +36,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				E34DAD4E16739D2700F07ED3 /* jsonpp.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -48,7 +46,6 @@
 		E34DAD4616739D2700F07ED3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E34DAD4916739D2700F07ED3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E34DAD4C16739D2700F07ED3 /* jsonpp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jsonpp-Prefix.pch"; sourceTree = "<group>"; };
-		E34DAD4D16739D2700F07ED3 /* jsonpp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jsonpp.1; sourceTree = "<group>"; };
 		E34DAD5616739ED400F07ED3 /* DDCliApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCliApplication.h; sourceTree = "<group>"; };
 		E34DAD5716739ED400F07ED3 /* DDCliApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCliApplication.m; sourceTree = "<group>"; };
 		E34DAD5816739ED400F07ED3 /* DDCliParseException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCliParseException.h; sourceTree = "<group>"; };
@@ -86,6 +83,8 @@
 		E34DAD8B16739EEB00F07ED3 /* libddcli.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libddcli.a; path = jsonpp/Libraries/DDCli/libddcli.a; sourceTree = "<group>"; };
 		E34DAD8D16739F2000F07ED3 /* CSJSONPrettyPrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJSONPrettyPrint.h; sourceTree = "<group>"; };
 		E34DAD8E16739F2000F07ED3 /* CSJSONPrettyPrint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJSONPrettyPrint.m; sourceTree = "<group>"; };
+		E36EA7F216893BF500EEE8D1 /* jsonpp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jsonpp.1; sourceTree = "<group>"; };
+		E36EA7F316893BF500EEE8D1 /* jsonpp.1.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = jsonpp.1.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +132,7 @@
 				E34DAD8D16739F2000F07ED3 /* CSJSONPrettyPrint.h */,
 				E34DAD8E16739F2000F07ED3 /* CSJSONPrettyPrint.m */,
 				E34DAD4916739D2700F07ED3 /* main.m */,
-				E34DAD4D16739D2700F07ED3 /* jsonpp.1 */,
+				E36EA7F116893BF500EEE8D1 /* manpage */,
 				E34DAD5416739ED400F07ED3 /* Libraries */,
 				E34DAD4B16739D2700F07ED3 /* Supporting Files */,
 			);
@@ -204,6 +203,16 @@
 			);
 			path = SBJson;
 			sourceTree = "<group>";
+		};
+		E36EA7F116893BF500EEE8D1 /* manpage */ = {
+			isa = PBXGroup;
+			children = (
+				E36EA7F216893BF500EEE8D1 /* jsonpp.1 */,
+				E36EA7F316893BF500EEE8D1 /* jsonpp.1.md */,
+			);
+			name = manpage;
+			path = doc/manpage;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 

@@ -51,3 +51,7 @@ Pretty-Print したものを Sublime Text 2.app で開く
 `jsonpp -o ~/foo/bar/buzz.json ~/foo/bar/buzz.json`
 
 `jsonpp --output twitter_search.json "http://search.twitter.com/search.json?lang=ja&rpp=20&q=%23iPhone"`
+
+# Download
+
+[jsonpp_installer](http://cyan-stivy.net/wordpress/wp-content/jsonpp_installer_v1_0_0.pkg)
